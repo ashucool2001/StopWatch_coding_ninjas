@@ -1,19 +1,19 @@
 // Variable to store the timer interval
 let timer;
-// Variable to track whether the stopwatch is running
+// Variable to track the stopwatch is running
 let running = false;
-// Variable to store the elapsed seconds
+// Variable to store the seconds
 let seconds = 0;
 
 // Function to start or pause the stopwatch
 function start() {
     if (!running) {
-        // If the stopwatch is not running, start it
+        // If the stopwatch is not running then click start button
         timer = setInterval(updateDisplay, 1000);
         running = true;
         document.getElementById("startBtn").textContent = "Pause";
     } else {
-        // If the stopwatch is running, pause it
+        // If the stopwatch is running click pause the stopwatch
         clearInterval(timer);
         running = false;
         document.getElementById("startBtn").textContent = "Resume";
@@ -46,7 +46,7 @@ function updateDisplay() {
     seconds++;
 }
 
-// Function to format time values to ensure they have two digits
+// Function to format time values
 function formatTime(time) {
     return time < 10 ? "0" + time : time;
 }
