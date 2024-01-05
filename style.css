@@ -1,0 +1,39 @@
+body {
+    font-family: 'poo', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.stopwatch {
+    text-align: center;
+    background-color: antiquewhite;
+    width: 20%;
+    height: 20%;
+    border-radius: 10px;
+
+}
+
+#display {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+button {
+    font-size: 1em;
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: black;
+    background-color: aqua;
+}
+button:hover{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    transition: ease-in 0.2s;
+}
